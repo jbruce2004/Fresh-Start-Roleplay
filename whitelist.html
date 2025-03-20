@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whitelist - Fresh Start Roleplay</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Fresh Start Roleplay Logo" class="logo-img">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rules.html">Rules</a></li>
+                <li><a href="whitelist.html" class="active">Whitelist</a></li>
+                <li><a href="https://discord.gg/QThMSjuz3Q" target="_blank">Join Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="whitelist-section">
+            <h2>Whitelist Application</h2>
+            <div class="whitelist-container">
+                <form class="whitelist-form">
+                    <div class="form-group">
+                        <label for="discord">Discord Username (with tag)</label>
+                        <input type="text" id="discord" name="discord" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="age">Age</label>
+                        <input type="number" id="age" name="age" required min="18" max="100">
+                        <div class="age-verification">
+                            <p class="verification-text">By submitting this form, you confirm that:</p>
+                            <ul class="verification-list">
+                                <li>You are at least 18 years old</li>
+                                <li>You understand that you will be required to provide valid government-issued ID for verification</li>
+                                <li>You agree to participate in a face verification check to confirm your identity matches your ID</li>
+                                <li>You understand that providing false information or failing verification will result in permanent ban</li>
+                            </ul>
+                            <p class="verification-warning">Note: After submitting this application, you will be contacted by our staff team to schedule your ID and face verification check.</p>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="experience">Previous RP Experience</label>
+                        <textarea id="experience" name="experience" required placeholder="Tell us about your previous roleplay experience..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="character">Character Background</label>
+                        <textarea id="character" name="character" required placeholder="Tell us about your character's background story..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="scenarios">RP Scenarios</label>
+                        <textarea id="scenarios" name="scenarios" required placeholder="Describe 2-3 RP scenarios you would like to create..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="rules">Rules Understanding</label>
+                        <textarea id="rules" name="rules" required placeholder="How would you handle a situation where another player breaks the rules?"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="availability">Availability</label>
+                        <textarea id="availability" name="availability" required placeholder="How often do you plan to play? What timezone are you in?"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="additional">Additional Information</label>
+                        <textarea id="additional" name="additional" placeholder="Any additional information you'd like to share..."></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-button">Submit Application</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Fresh Start Roleplay. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
